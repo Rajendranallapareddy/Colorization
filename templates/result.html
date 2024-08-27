@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorized Image</title>
+    <link rel="stylesheet" href="/static/result.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Colorized Image</h1>
+        <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Colorized Image">
+        <br>
+        <a href="/" class="btn">Colorize Another Image</a>
+   
+       <div class="ra"><a href="{{ url_for('uploaded_file', filename=filename) }}" download class="btn download-btn">Download</a></div> 
+    </div>
+</body>
+</html>

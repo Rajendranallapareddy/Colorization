@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="bground"></div>
+    <title>AboutUS</title>
+    <link rel="stylesheet" href="\static\aboutusstyle.css">
+    <div class="banner">
+        <center><h1>Developer of the project</h1></center>
+    </div>
+    
+</head>
+<body>
+    <div class="author-info">
+        <img src="{{ url_for('static', filename='../static/images/raja1.jpg') }}" width="1500" height="auto" class="homeimg">
+        <h2>Rajendra Nallapareddy</h2>
+        <p>At Visvodaya Technical Academy </p>
+        Pursuing 3rd year of bachelor degree</p>
+        Bearing the roll number 214N1A3926</p>    </div>
+
+    <center><button class="vits" onclick="redirectToURL('https://pbrvits.ac.in/')" value="button">Visit VITS</button></center>
+
+    <script>
+        function redirectToURL(url) {
+          window.location.href = url;
+        }
+      </script>
+
+<center><button class="bt" id="visitButton">Visit Me</button></center>
+<div id="content" style="display:none;">
+    <center><h3>Rajendra Nallapareddy</h3>
+    <h3>214N1A3926</h3>
+    <h3><a href="https://www.google.co.in/search?q=google+mail&sca_esv=9a0c77fca43723a5&ei=72U0ZpikMauYvr0PuP2luA0&ved=0ahUKEwjY17nD0PCFAxUrjK8BHbh-CdcQ4dUDCBA&uact=5&oq=google+mail&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2dvb2dsZSBtYWlsMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMg0QABiABBiwAxhDGIoFMhMQLhiABBiwAxjRAxhDGMcBGIoFSJUOUPoDWJsGcAF4AZABAJgByAGgAekCqgEFMC4xLjG4AQPIAQD4AQGYAgOgAoEDwgIFEAAYgATCAgsQLhiABBjHARivAcICBhAAGAcYHsICBxAAGIAEGAqYAwDiAwUSATEgQIgGAZAGCpIHBTEuMS4xoAfuDg&sclient=gws-wiz-serp">rajendranallapareddy9515@gmail.com</a></h3>
+    <h3>At Visvodaya Technical Academy </h3>
+      <h3>Pursuing 3rd year of bachelor degree</h3> </center>
+</div>
+<script>
+document.getElementById("visitButton").addEventListener("click", function() {
+    document.getElementById("content").style.display = "block";
+});
+</script>
+    
+   
+
+</body>
+</html>

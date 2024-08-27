@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Colorizer</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+
+<header>
+    <br>
+    <nav>
+        <a href="{{ url_for('aboutus') }}">AboutMe</a>
+    </nav>
+    <div class="auth-buttons">
+        <a href="{{ url_for('signup') }}" class="signup">Sign up</a>
+        <a href="{{ url_for('login') }}" class="login">Log in</a>
+    </div>
+</header>
+
+<main>
+    <div class="colorizer-text">
+        <h1>COLORIZER</h1>
+        <p>Convert black and white photos to color here, and turn your old photo into a colorful reality.</p>
+    </div>
+     
+    <div class="comparison-container">
+        <div class="img-container">
+            <img src="uploads/aa.jpg" alt="Before" class="before">
+            <img src="uploads/colorized_aa.jpg" alt="After" class="after">
+        </div>
+        <div class="slider"></div>
+    </div>
+
+    <script src="static/script.js"></script>
+
+    <div class="upload-area">
+        <h3>Upload your image here</h3>
+        <form action="/upload" method="POST" enctype="multipart/form-data" class="custom-file-upload">
+            <label for="fileInput" class="upload-label">
+                <input type="file" id="fileInput" name="file" required>
+                <span id="fileName">Upload Image</span>
+            </label>
+            <button type="submit" class="convert-button">Convert</button>
+        </form>
+    </div>
+    
+
+
+
+</main>
+
+</body>
+</html>

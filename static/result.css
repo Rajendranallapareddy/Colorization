@@ -1,0 +1,61 @@
+/* Reset some default styles */
+body, h1, img, a, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a colorful gradient background for the body */
+body {
+    font-family: Arial, sans-serif;
+    background:#ffffff;
+    backdrop-filter: blur(50px);
+    color: #e61c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Style the container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+
+}
+.ra{
+    margin-top: 15px;
+}
+
+/* Style the header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Style the image display */
+img {
+    width:90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the link */
+a {
+    color: #e31f1f;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #f5576c;
+}

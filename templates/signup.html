@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="\static\registerstyle.css">
+</head>
+<body>
+    <div class="bgg"></div>
+    <div class="container">
+        <center><h2>Registration form</h2></center>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password"required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label><br>
+                <input type ="radio" name="gender">Male
+                <input type ="radio" name="gender">Female
+                <input type ="radio" name="gender">others
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter phone number" required>
+            </div>
+            <div class="btt">
+            <center><button type="submit">Register</button></center>
+       
+            <center><button class="backbutton" onclick="goBack()">Back</button></center>
+
+            </div>
+        </div>
+        </form>
+    </div>
+    <script>
+        function goBack() {
+             window.history.back();
+        }
+    </script>
+</body>
+</html>
